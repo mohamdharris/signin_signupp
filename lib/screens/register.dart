@@ -197,7 +197,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     SizedBox(
                         height: 180,
                         child: Image.network(
-                          "https://images.pexels.com/photos/3689532/pexels-photo-3689532.jpeg?auto=compress&cs=tinysrgb&w=600",
+                          "https://images.pexels.com/photos/2042606/pexels-photo-2042606.jpeg?auto=compress&cs=tinysrgb&w=600",
                           fit: BoxFit.contain,
                         )),
                     SizedBox(

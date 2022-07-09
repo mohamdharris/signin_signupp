@@ -46,36 +46,36 @@ class _HomeScreenState extends State<HomeScreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              SizedBox(
-                height: 150,
-                child: Image.network(
-                  "https://images.pexels.com/photos/3689532/pexels-photo-3689532.jpeg?auto=compress&cs=tinysrgb&w=600",
-                  fit: BoxFit.contain,
-                ),
-              ),
               SizedBox(height: 10),
               Text(
                 "Welcome To Our DashBoard Screen",
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
               SizedBox(
-                height: 10,
+                height: 30,
               ),
               Text(
                 "${logginUser.firstNmae} ${logginUser.secondName}",
-                style:
-                    TextStyle(color: Colors.black, fontWeight: FontWeight.w600),
+                style: TextStyle(
+                    color: Colors.black,
+                    fontWeight: FontWeight.w600,
+                    fontSize: 20),
               ),
               Text(
                 "${logginUser.email}",
-                style:
-                    TextStyle(color: Colors.black, fontWeight: FontWeight.w600),
+                style: TextStyle(
+                    color: Colors.black,
+                    fontWeight: FontWeight.w600,
+                    fontSize: 20),
               ),
               SizedBox(
-                height: 15,
+                height: 20,
               ),
               ActionChip(
-                  label: Text("LogOut"),
+                  label: Text(
+                    "LogOut",
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
                   onPressed: () {
                     logOut(context);
                   }),
